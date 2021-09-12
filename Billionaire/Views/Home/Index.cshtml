@@ -1,0 +1,28 @@
+﻿@model Billionaire.Models.PlayerModel;
+@{ 
+    ViewData["Title"] = "Home Page";
+}
+
+<script language="JavaScript">
+    localStorage.setItem("help", 0);
+</script>
+<form asp-action="AmountSend">
+    <div class="text-center">
+        <br />
+        <h3>Choose number of questions in game</h3>
+        
+        <select name="ammount">
+            @for (var i = 1; i <= 15; i++)
+            {
+                <option value="@(i)">@i</option>
+            }
+        </select>
+
+
+        <input type="submit" value="Start" />
+
+
+
+
+    </div>
+</form>

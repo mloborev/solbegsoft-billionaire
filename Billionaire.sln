@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billionaire", "Billionaire\Billionaire.csproj", "{206BE1ED-C4AD-45BE-A2BF-4FA259472396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillionaireTests", "BillionaireTests\BillionaireTests.csproj", "{80244996-D3EC-45D4-A2AC-97CA5C603B06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{206BE1ED-C4AD-45BE-A2BF-4FA259472396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206BE1ED-C4AD-45BE-A2BF-4FA259472396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206BE1ED-C4AD-45BE-A2BF-4FA259472396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206BE1ED-C4AD-45BE-A2BF-4FA259472396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80244996-D3EC-45D4-A2AC-97CA5C603B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80244996-D3EC-45D4-A2AC-97CA5C603B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80244996-D3EC-45D4-A2AC-97CA5C603B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80244996-D3EC-45D4-A2AC-97CA5C603B06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E33B0EBD-EB6E-485D-A4F2-80AAC83D9175}
+	EndGlobalSection
+EndGlobal

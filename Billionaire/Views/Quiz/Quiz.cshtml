@@ -1,0 +1,49 @@
+﻿@model Billionaire.Models.PlayerModel
+<style src="../../wwwroot/css/site.css"></style>
+
+<script>
+    const check = () => {
+        const local = localStorage.getItem("help");
+        if (local == 1) {
+            document.querySelector("#help").className = "hidden";
+        }
+    };
+    setTimeout(() => {
+        check();
+    }, 0);
+</script>
+
+<form asp-action="QuizView">
+    <div>
+
+        <h4>Quеstion#@ViewData["Ammount"]</h4>
+        <br />
+        <h5>@ViewData["Question"]</h5>
+        <br />
+
+        <div class="answers-block">
+            <div class="answer">
+                <input type="submit" class="@ViewData["IsTrue1"]" name="button" value="1" asp-for="button" /> @ViewData["Answer1"]
+            </div>
+
+            <div class="answer">
+
+                <input type="submit" class="@ViewData["IsTrue2"]" name="button" value="2" asp-for="button" /> @ViewData["Answer2"]
+            </div>
+            <div class="answer">
+
+                <input type="submit" class="@ViewData["IsTrue3"]" name="button" value="3" asp-for="button" /> @ViewData["Answer3"]
+            </div>
+            <div class="answer">
+
+                <input type="submit" class="@ViewData["IsTrue4"]" name="button" value="4" asp-for="button" /> @ViewData["Answer4"]
+            </div>
+            <input type="button" id="help" value="50/50" />
+            <br />
+            Result: @ViewData["Score"]
+
+        </div>
+
+    </div>
+    <div class="text-center"></div>
+</form>
